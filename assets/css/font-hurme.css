@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-BlackOblique.otf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-BoldOblique.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-SemiBoldOblique.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-LightOblique.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-ThinOblique.otf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HurmeGeometrocSans1";
+  src: url("./../fonts/hurme/HurmeGeometricSans1-Thin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-hurme {
+  font-family: "HurmeGeometrocSans1";
+}
