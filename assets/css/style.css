@@ -5,7 +5,7 @@
 .container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 64px 20px 32px;
 }
 
 .header {
@@ -15,12 +15,12 @@
   padding: 10px 0;
 }
 
-.logo {
+.header .logo {
   font-size: 24px;
   font-weight: bold;
 }
 
-.share-btn {
+.header .share-btn {
   color: rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 5px;
@@ -30,7 +30,7 @@
   position: relative;
 }
 
-.share-btn .share-content {
+.header .share-btn .share-content {
   position: absolute;
   top: 10px;
   right: 0;
@@ -42,58 +42,69 @@
   overflow: hidden;
 }
 
-.share-btn .share-content a {
-  padding: 10px;
+.header .share-btn .share-content a {
+  padding: 10px 18px;
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: all .1s linear;
+  transition: all 0.1s linear;
+  font-weight: 500;
 }
 
-.share-btn .share-content a:hover {
-   background-color: #14181c;
-  }
+.header .share-btn .share-content a:hover {
+  background-color: #14181c;
+}
 
-.share-btn .hidden {
+.header .share-btn .hidden {
   display: none;
 }
 
-.title {
+.container .title {
   font-size: 44px;
   font-weight: 700;
   margin: 20px 0;
 }
 
-.description {
+.container .description {
   font-size: 24px;
   margin-bottom: 24px;
 }
 
-.sponsor-section {
+@media screen and (max-width: 767px) {
+    .container .title {
+        font-size: 32px;
+      }
+      
+      .container .description {
+        font-size: 18px;
+      }
+  }
+
+.container .sponsor-section {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.sponsor-section .sponsor-logo {
+.container .sponsor-section .sponsor-logo {
   margin-right: 10px;
   padding-right: 10px;
   vertical-align: middle;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.sponsor-section .sponsor-logo img {
-    width: 50px;
-  }
+.container .sponsor-section .sponsor-logo img {
+  width: 50px;
+}
 
-.sponsor-section .sponsor-text {
+.container .sponsor-section .sponsor-text {
   font-size: 10px;
   font-weight: 700;
 }
 
-.content-section {
+.container .content-section {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -101,7 +112,7 @@
   margin-bottom: 48px;
 }
 
-.content-section .content-box {
+.container .content-section .content-box {
   background-color: #f4f5f6;
   padding: 20px 40px 20px 20px;
   border-radius: 20px;
@@ -109,7 +120,7 @@
   overflow: hidden;
 }
 
-.content-section .content-box:after {
+.container .content-section .content-box:after {
   counter-increment: section;
   content: counters(section, ".");
   font-size: 6em;
@@ -138,11 +149,13 @@
     #18244c 73%,
     #010101 91%
   );
-  padding-top: 10%;
+  padding-top: 64px;
   width: 100%;
+  display: flex;
 }
 
 .footer .footer-content {
+  width: 100%;
   max-width: 720px;
   margin: 0 auto;
   text-align: center;
@@ -150,8 +163,51 @@
   padding: 0 20px;
 }
 
+.footer .footer-content .footer-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+  margin-bottom: 300px;
+  z-index: 2;
+  position: relative;
+}
+
+.footer .footer-content .footer-content-text .one {
+    margin-bottom: 20px;
+  }
+
+.footer .footer-content .footer-content-text .two {
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 5px 20px;
+  position: relative;
+  left: -20px;
+  margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-content-text .logo {
+  margin-top: 36px;
+  max-width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .footer-content .footer-content-text {
+    margin-bottom: 400px;
+  }
+
+  .footer .footer-content .footer-content-text .two {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
 .footer .footer-women {
   max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .footer .footer-cta {
@@ -159,7 +215,7 @@
   border-radius: 100px;
   border: none;
   position: absolute;
-  z-index: 2;
+  z-index: 9;
   bottom: 48px;
   left: 20px;
   width: calc(100% - 40px);
@@ -184,12 +240,19 @@
   border-radius: 100px;
   text-decoration: none;
   align-items: center;
-  transition: all .1s linear;
+  transition: all 0.1s linear;
+  z-index: 8;
+}
+
+@media screen and (max-width: 574px) {
+  .ask-bundle-ai span {
+    display: none;
+  }
 }
 
 .ask-bundle-ai:hover {
-    background-color: #5f6369;
-  }
+  background-color: #5f6369;
+}
 
 .ask-bundle-ai .bundle-ai-logo {
   margin-right: 16px;
