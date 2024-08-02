@@ -11,14 +11,22 @@
 
 <body>
     <div class="container">
-        <nav class="navbar">
+        <nav class="header">
             <div class="logo">
                 <img src="./assets/img/logo.svg" />
             </div>
-            <div class="share-btn font-gilroy">Paylaş</div>
+            <div class="share-btn font-gilroy" id="shareButton">Paylaş <img src="./assets/img/icons/share.png" />
+                <div id="shareContainer" class="hidden share-content">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=URL" target="_blank">Facebook <img src="./assets/img/icons/facebook.png" /></a>
+                    <a href="https://x.com/share?url=URL" target="_blank">X<img src="./assets/img/icons/x.png" /></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=URL" target="_blank">Whatsapp<img src="./assets/img/icons/whatsapp.png" /></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=URL" target="_blank">Kopyala<img src="./assets/img/icons/copy.png" /></a>
+                </div>
+            </div>
         </nav>
         <h1 class="title font-gilroy">“Gülmek en iyi ilaçtır”ı alelade bir deyim sanmayın.</h1>
-        <p class="description font-gilroy">Bağışıklık sistemini güçlendirmekten stres hormonu azaltmaya, gülmenin türlü türlü faydası
+        <p class="description font-gilroy">Bağışıklık sistemini güçlendirmekten stres hormonu azaltmaya, gülmenin türlü
+            türlü faydası
             var. Üstelik reçetesiz! Yan etkileri de sadece bulaşıcı bir mutluluk ve belki biraz yanak ağrısı.</p>
         <div class="sponsor-section">
             <div class="sponsor-logo">
@@ -27,25 +35,37 @@
             <div class="sponsor-text font-gilroy">Sponsorluğunda</div>
         </div>
         <div class="content-section">
-            <div class="content-box font-hurme">Mesela gülmek doğal bir ağrı kesici. Çünkü doğal bir ağrı kesici olan endorfin
+            <div class="content-box font-hurme">Mesela gülmek doğal bir ağrı kesici. Çünkü doğal bir ağrı kesici olan
+                endorfin
                 salgısını artırıyor, ruh halimiz iyileşiyor.</div>
-            <div class="content-box font-hurme">Gülmenin tek artırdığı endorfin değil. Antikor üretimini artırıyor, bu da
+            <div class="content-box font-hurme">Gülmenin tek artırdığı endorfin değil. Antikor üretimini artırıyor, bu
+                da
                 bağışıklık sistemini destekliyor. Dopamin ve serotonin hormonlarını artırıyor, kendimizi daha iyi
                 hissediyoruz.</div>
-            <div class="content-box font-hurme">Gülmek artırdığı kadar azaltıyor da. Mesela kortizol ve adrenalini. Sonuç? Stresin
+            <div class="content-box font-hurme">Gülmek artırdığı kadar azaltıyor da. Mesela kortizol ve adrenalini.
+                Sonuç? Stresin
                 fiziksel etkileri hafifliyor. Bir ferahlık geliyor. Stresin azalması tansiyonu da düşürüyor.</div>
-            <div class="content-box font-hurme">Gülümsemenin damar fonksiyonlarını iyileştirerek kalp sağlığını korumaya yardımcı
+            <div class="content-box font-hurme">Gülümsemenin damar fonksiyonlarını iyileştirerek kalp sağlığını korumaya
+                yardımcı
                 olduğunu, stresi azaltarak tansiyonu dengelediğini gösteren araştırmalar bile var.</div>
-            <div class="content-box font-hurme">Gülümsemenin faydalarından ağız bakım rutininize, gülmekle ilgili aklınıza gelen
+            <div class="content-box font-hurme">Gülümsemenin faydalarından ağız bakım rutininize, gülmekle ilgili
+                aklınıza gelen
                 her şeyi bize sorun. Bundle AI sizin de yüzünüzü güldürsün.</div>
         </div>
     </div>
     <footer class="footer">
         <div class="footer-content">
-            <img src="./assets/img/footer-women.png" alt="Oral-B">
-            <button class="footer-cta font-gilroy">Keşfet</button>
+            <img class="footer-women" src="./assets/img/footer-women.png" alt="Oral-B">
+            <button class="footer-cta font-hurme">Keşfet</button>
         </div>
     </footer>
+    <a href="" class="ask-bundle-ai font-hurme">
+        <img class="bundle-ai-logo" src="./assets/img/bundle-ai-logo.png" />
+        <span>Merak ettiklerini sor</span>
+        <img class="btn-arrow" src="./assets/img/icons/arrow-right.png" />
+    </a>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
