@@ -1,4 +1,8 @@
+import { sendGA4Events } from "./ga4.js";
+const { sendItemImpression, sendItemClick } = sendGA4Events({ campaign: "bundle-ai-studio-oralb-gulumseme-rehberi" });
+
 document.addEventListener('DOMContentLoaded', () => {
+    sendItemImpression("homepage");
     const title = document.title;
 
     //share modal toggle
@@ -53,3 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
         window.open(xUrl, '_blank');
     });
 });
+
+document.getElementById("footerCTA").onclick = function () {
+    sendItemClick("discover-oral-b")
+    var newUrl = "https://www.hepsiburada.com/ara?q=oral-b&filtreler=MainCategory.Id:26012118;satici:Hep[…]ansman&wt_cp=pg.oralb-oral-b-paste-launch-bundle-lansman-ai";
+    window.open(newUrl, '_blank');
+};
+
+document.getElementById("askBundleAI").onclick = function () {
+    sendItemClick("ask-bundle")
+    var newUrl = "https://bundleaistudio.bundle.app/chat/4u4gcdkswi5lz6rwwsj/oral-b";
+    window.open(newUrl, '_blank');
+};
+

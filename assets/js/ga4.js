@@ -1,19 +1,9 @@
-export const sendGA4Events = ({
-  campaign,
-  measurementId,
-  apiSecretKey,
-  ga4ClientId,
-}: {
-  campaign: string;
-  measurementId?: string;
-  apiSecretKey?: string;
-  ga4ClientId?: string;
-}) => {
+export const sendGA4Events = ({ campaign, measurementId, apiSecretKey, ga4ClientId }) => {
   const GA4_CLIENT_ID = ga4ClientId || Math.random().toString(36).substring(7);
   const ANALYTICS_ID = measurementId || "G-7PNZ5E4JDZ";
   const API_SECRET = apiSecretKey || "RU0cCzDxRbCbpV6xOZ7xQA";
 
-  async function sendGA4Event(name: string, action: string, label: string) {
+  async function sendGA4Event(name, action, label) {
     return await fetch(
       `https://www.google-analytics.com/mp/collect?measurement_id=${ANALYTICS_ID}&api_secret=${API_SECRET}`,
       {
@@ -29,12 +19,12 @@ export const sendGA4Events = ({
               },
             },
           ],
-        }),
+        })
       }
     );
   }
 
-  function pushEvent(action: string, label: string) {
+  function pushEvent(action, label) {
     console.debug("pushEvent", { label, campaign, action });
 
     sendGA4Event(campaign, action, label)
@@ -46,10 +36,8 @@ export const sendGA4Events = ({
 
   return {
     pushEvent,
-    sendItemImpression: (label: string) =>
-      pushEvent("item_impression", `impression:${label}`),
-    sendItemClick: (label: string) =>
-      pushEvent("item_impression", `click:${label}`),
+    sendItemImpression: (label) => pushEvent("item_impression", `impression:${label}`),
+    sendItemClick: (label) => pushEvent("item_impression", `click:${label}`)
   };
 };
 
@@ -63,7 +51,7 @@ export const sendGA4Events = ({
  *
  * Impression:
  * ...
- * document.addEventListener("DOMContentLoaded", (event: Event) => {
+ * document.addEventListener("DOMContentLoaded", (event) => {
  *   sendItemImpression("homepage");
  * });
  */

@@ -150,6 +150,8 @@
   transition: all 0.1s linear;
   z-index: 8;
   gap: 16px;
+  border:0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 575px) {
