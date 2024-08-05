@@ -135,12 +135,12 @@
 
 .container .ask-bundle-ai {
   width: 80%;
-  max-width: 540px;
+  max-width: 350px;
   position: sticky;
   margin: auto;
   bottom: 48px;
   display: flex;
-  background-color: #6a6f76;
+  background-color: #6A6F76;
   color: #fff;
   padding: 24px;
   font-size: 18px;
@@ -150,7 +150,7 @@
   transition: all 0.1s linear;
   z-index: 8;
   gap: 16px;
-  border:0;
+  border: 0;
   cursor: pointer;
 }
 
@@ -200,11 +200,11 @@
 
 .footer .footer-content {
   width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  padding: 0 20px;
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
 }
 
 .footer .footer-content .footer-content-text {
@@ -235,7 +235,7 @@
   max-width: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 525px) {
   .footer .footer-content .footer-content-text {
     margin-bottom: 400px;
   }
