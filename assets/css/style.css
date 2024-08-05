@@ -6,21 +6,22 @@
   max-width: 720px;
   margin: 0 auto;
   padding: 64px 20px 32px;
+  position: relative;
 }
 
-.header {
+.container .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
 
-.header .logo {
+.container .header .logo {
   font-size: 24px;
   font-weight: bold;
 }
 
-.header .share-btn {
+.container .header .share-btn {
   color: rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 5px;
@@ -30,7 +31,7 @@
   position: relative;
 }
 
-.header .share-btn .share-content {
+.container .header .share-btn .share-content {
   position: absolute;
   top: 10px;
   right: 0;
@@ -42,7 +43,7 @@
   overflow: hidden;
 }
 
-.header .share-btn .share-content a {
+.container .header .share-btn .share-content a {
   padding: 10px 18px;
   color: #fff;
   text-decoration: none;
@@ -53,11 +54,11 @@
   font-weight: 500;
 }
 
-.header .share-btn .share-content a:hover {
+.container .header .share-btn .share-content a:hover {
   background-color: #14181c;
 }
 
-.header .share-btn .hidden {
+.container .header .share-btn .hidden {
   display: none;
 }
 
@@ -73,14 +74,14 @@
 }
 
 @media screen and (max-width: 767px) {
-    .container .title {
-        font-size: 32px;
-      }
-      
-      .container .description {
-        font-size: 18px;
-      }
+  .container .title {
+    font-size: 32px;
   }
+
+  .container .description {
+    font-size: 18px;
+  }
+}
 
 .container .sponsor-section {
   display: flex;
@@ -132,6 +133,47 @@
   bottom: -36px;
 }
 
+.container .ask-bundle-ai {
+  width: 80%;
+  max-width: 540px;
+  position: sticky;
+  margin: auto;
+  bottom: 48px;
+  display: flex;
+  background-color: #6a6f76;
+  color: #fff;
+  padding: 24px;
+  font-size: 18px;
+  border-radius: 100px;
+  text-decoration: none;
+  align-items: center;
+  transition: all 0.1s linear;
+  z-index: 8;
+  gap: 16px;
+}
+
+@media screen and (max-width: 575px) {
+  .container .ask-bundle-ai {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container .ask-bundle-ai {
+    font-size: 14px;
+    padding: 8px 6px;
+  }
+}
+
+.container .ask-bundle-ai:hover {
+  background-color: #5f6369;
+}
+
+.container .ask-bundle-ai .btn-arrow {
+  margin-left: auto;
+}
+
 .footer {
   background: radial-gradient(
     179.78% 128.17% at -10.19% -11.54%,
@@ -174,8 +216,8 @@
 }
 
 .footer .footer-content .footer-content-text .one {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
 
 .footer .footer-content .footer-content-text .two {
   border: 2px solid #fff;
@@ -212,6 +254,8 @@
 
 .footer .footer-cta {
   background-color: #fff;
+  color: #000;
+  text-decoration: none;
   border-radius: 100px;
   border: none;
   position: absolute;
@@ -223,41 +267,4 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-}
-
-.ask-bundle-ai {
-  width: 80%;
-  max-width: 540px;
-  position: fixed;
-  left: 50%;
-  bottom: 48px;
-  transform: translate(-50%, 0);
-  display: flex;
-  background-color: #6a6f76;
-  color: #fff;
-  padding: 24px;
-  font-size: 18px;
-  border-radius: 100px;
-  text-decoration: none;
-  align-items: center;
-  transition: all 0.1s linear;
-  z-index: 8;
-}
-
-@media screen and (max-width: 574px) {
-  .ask-bundle-ai span {
-    display: none;
-  }
-}
-
-.ask-bundle-ai:hover {
-  background-color: #5f6369;
-}
-
-.ask-bundle-ai .bundle-ai-logo {
-  margin-right: 16px;
-}
-
-.ask-bundle-ai .btn-arrow {
-  margin-left: auto;
 }
