@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById("footerCTA").onclick = function () {
     sendItemClick("discover-oral-b")
-    var newUrl = "https://www.hepsiburada.com/ara?q=oral-b&filtreler=MainCategory.Id:26012118;satici:Hep[…]ansman&wt_cp=pg.oralb-oral-b-paste-launch-bundle-lansman-ai";
+    var newUrl = "https://www.hepsiburada.com/ara?q=oral-b&filtreler=MainCategory.Id:26012118;satici:Hepsiburada&markalar=oralb2&utm_source=coop&utm_medium=pg&utm_campaign=oralb-oral-b-paste-launch-bundle-lansman&wt_cp=pg.oralb-oral-b-paste-launch-bundle-lansman-ai";
     window.open(newUrl, '_blank');
 };
 
